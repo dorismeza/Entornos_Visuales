@@ -1,6 +1,6 @@
 ﻿Public Class Form1
     Private Sub btnCalcular_Click(sender As Object, e As EventArgs) Handles btnCalcular.Click
-        'comentarios
+        'Comentarios
 
         'Inicio
         Dim valor1 As Integer
