@@ -157,7 +157,7 @@ Partial Class Form1
         '
         'txtPosicion
         '
-        Me.txtPosicion.Location = New System.Drawing.Point(178, 242)
+        Me.txtPosicion.Location = New System.Drawing.Point(179, 242)
         Me.txtPosicion.Name = "txtPosicion"
         Me.txtPosicion.Size = New System.Drawing.Size(100, 20)
         Me.txtPosicion.TabIndex = 13
