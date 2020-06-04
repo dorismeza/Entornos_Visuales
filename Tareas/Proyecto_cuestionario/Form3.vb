@@ -79,6 +79,7 @@
     Private Sub Eobtener_Click(sender As Object, e As EventArgs) Handles Eobtener.Click
         Dim x As Integer
 
+
         If Mp11.Checked = True Then
             x = x + 1
         End If
