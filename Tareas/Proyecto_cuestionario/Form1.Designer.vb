@@ -94,7 +94,7 @@ Partial Class Form1
         'btnEspañol
         '
         Me.btnEspañol.BackColor = System.Drawing.Color.Gray
-        Me.btnEspañol.BackgroundImage = Global.Proyecto_cuestionario.My.Resources.Resources.a_b_c
+        Me.btnEspañol.BackgroundImage = Global.Proyecto_cuestionario.My.Resources.Resources.libro
         Me.btnEspañol.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnEspañol.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnEspañol.Location = New System.Drawing.Point(377, 119)

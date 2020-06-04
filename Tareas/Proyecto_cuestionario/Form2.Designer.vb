@@ -23,26 +23,18 @@ Partial Class Form2
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.Ingresar = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
+        Me.txtNombre = New System.Windows.Forms.MaskedTextBox()
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'txtNombre
-        '
-        Me.txtNombre.Location = New System.Drawing.Point(61, 79)
-        Me.txtNombre.Multiline = True
-        Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(221, 29)
-        Me.txtNombre.TabIndex = 0
         '
         'Ingresar
         '
         Me.Ingresar.BackColor = System.Drawing.Color.Cyan
-        Me.Ingresar.Location = New System.Drawing.Point(115, 131)
+        Me.Ingresar.Location = New System.Drawing.Point(119, 129)
         Me.Ingresar.Name = "Ingresar"
         Me.Ingresar.Size = New System.Drawing.Size(101, 48)
         Me.Ingresar.TabIndex = 1
@@ -63,6 +55,14 @@ Partial Class Form2
         '
         Me.ErrorProvider1.ContainerControl = Me
         '
+        'txtNombre
+        '
+        Me.txtNombre.Location = New System.Drawing.Point(104, 81)
+        Me.txtNombre.Mask = "Nombre Apellido"
+        Me.txtNombre.Name = "txtNombre"
+        Me.txtNombre.Size = New System.Drawing.Size(139, 24)
+        Me.txtNombre.TabIndex = 3
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 17.0!)
@@ -71,9 +71,9 @@ Partial Class Form2
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(362, 287)
         Me.ControlBox = False
+        Me.Controls.Add(Me.txtNombre)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Ingresar)
-        Me.Controls.Add(Me.txtNombre)
         Me.Font = New System.Drawing.Font("Showcard Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Form2"
@@ -83,10 +83,9 @@ Partial Class Form2
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents txtNombre As TextBox
     Friend WithEvents Ingresar As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents ErrorProvider1 As ErrorProvider
     Friend WithEvents ToolTip As ToolTip
+    Friend WithEvents txtNombre As MaskedTextBox
 End Class

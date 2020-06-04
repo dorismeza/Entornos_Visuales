@@ -103,7 +103,7 @@
 
     Private Sub Eregresar_Click(sender As Object, e As EventArgs) Handles Mregresar.Click
         Form1.Show()
-        Me.Hide()
+        Me.Close()
 
     End Sub
 End Class

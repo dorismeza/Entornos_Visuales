@@ -101,7 +101,7 @@
 
     Private Sub Eregresar_Click(sender As Object, e As EventArgs) Handles Cregresar.Click
         Form1.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load

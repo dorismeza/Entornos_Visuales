@@ -1,7 +1,7 @@
 ﻿Imports System.ComponentModel
 
 Public Class Form2
-    Private Sub txtNombre_TextChanged(sender As Object, e As EventArgs) Handles txtNombre.TextChanged
+    Private Sub txtNombre_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -15,18 +15,22 @@ Public Class Form2
             MessageBox.Show("     Bienvenido  " & nombre, "Cuestionario", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Form1.Show()
         End If
+
     End Sub
 
-    Private Sub txtNombre_Validating(sender As Object, e As CancelEventArgs) Handles txtNombre.Validating
+    Private Sub txtNombre_Validating(sender As Object, e As CancelEventArgs)
         If DirectCast(sender, TextBox).Text.Length > 0 Then
             Me.ErrorProvider1.SetError(sender, "")
         End If
     End Sub
 
     Private Sub txtNombre_MouseHover(sender As Object, e As EventArgs) Handles txtNombre.MouseHover
-
         ToolTip.SetToolTip(txtNombre, "Escribe tu nombre")
         ToolTip.ToolTipTitle = "Nombre"
         ToolTip.ToolTipIcon = ToolTipIcon.Info
+    End Sub
+
+    Private Sub txtNombre_MaskInputRejected(sender As Object, e As MaskInputRejectedEventArgs) Handles txtNombre.MaskInputRejected
+
     End Sub
 End Class
