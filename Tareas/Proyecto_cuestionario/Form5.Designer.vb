@@ -23,21 +23,25 @@ Partial Class Form5
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.respuest4 = New System.Windows.Forms.PictureBox()
         Me.Ep43 = New System.Windows.Forms.RadioButton()
         Me.Ep42 = New System.Windows.Forms.RadioButton()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Ep41 = New System.Windows.Forms.RadioButton()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.respuest3 = New System.Windows.Forms.PictureBox()
         Me.Ep33 = New System.Windows.Forms.RadioButton()
         Me.Ep32 = New System.Windows.Forms.RadioButton()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Ep31 = New System.Windows.Forms.RadioButton()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.respuest2 = New System.Windows.Forms.PictureBox()
         Me.Ep23 = New System.Windows.Forms.RadioButton()
         Me.Ep22 = New System.Windows.Forms.RadioButton()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Ep21 = New System.Windows.Forms.RadioButton()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.respuest1 = New System.Windows.Forms.PictureBox()
         Me.Ep13 = New System.Windows.Forms.RadioButton()
         Me.Ep12 = New System.Windows.Forms.RadioButton()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -45,17 +49,13 @@ Partial Class Form5
         Me.Eregresar = New System.Windows.Forms.Button()
         Me.Eobtener = New System.Windows.Forms.Button()
         Me.txtPuntuacion = New System.Windows.Forms.TextBox()
-        Me.respuest4 = New System.Windows.Forms.PictureBox()
-        Me.respuest3 = New System.Windows.Forms.PictureBox()
-        Me.respuest2 = New System.Windows.Forms.PictureBox()
-        Me.respuest1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox4.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
         CType(Me.respuest4, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox3.SuspendLayout()
         CType(Me.respuest3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox2.SuspendLayout()
         CType(Me.respuest2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         CType(Me.respuest1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -75,6 +75,15 @@ Partial Class Form5
         Me.GroupBox4.TabIndex = 8
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Pregunta 4"
+        '
+        'respuest4
+        '
+        Me.respuest4.Location = New System.Drawing.Point(189, 103)
+        Me.respuest4.Name = "respuest4"
+        Me.respuest4.Size = New System.Drawing.Size(43, 40)
+        Me.respuest4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.respuest4.TabIndex = 14
+        Me.respuest4.TabStop = False
         '
         'Ep43
         '
@@ -132,6 +141,15 @@ Partial Class Form5
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Pregunta 3"
         '
+        'respuest3
+        '
+        Me.respuest3.Location = New System.Drawing.Point(186, 103)
+        Me.respuest3.Name = "respuest3"
+        Me.respuest3.Size = New System.Drawing.Size(43, 40)
+        Me.respuest3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.respuest3.TabIndex = 14
+        Me.respuest3.TabStop = False
+        '
         'Ep33
         '
         Me.Ep33.AutoSize = True
@@ -188,6 +206,15 @@ Partial Class Form5
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Pregunta 2"
         '
+        'respuest2
+        '
+        Me.respuest2.Location = New System.Drawing.Point(189, 103)
+        Me.respuest2.Name = "respuest2"
+        Me.respuest2.Size = New System.Drawing.Size(43, 40)
+        Me.respuest2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.respuest2.TabIndex = 14
+        Me.respuest2.TabStop = False
+        '
         'Ep23
         '
         Me.Ep23.AutoSize = True
@@ -243,6 +270,15 @@ Partial Class Form5
         Me.GroupBox1.TabIndex = 5
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Pregunta 1"
+        '
+        'respuest1
+        '
+        Me.respuest1.Location = New System.Drawing.Point(186, 103)
+        Me.respuest1.Name = "respuest1"
+        Me.respuest1.Size = New System.Drawing.Size(43, 40)
+        Me.respuest1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.respuest1.TabIndex = 14
+        Me.respuest1.TabStop = False
         '
         'Ep13
         '
@@ -309,46 +345,10 @@ Partial Class Form5
         'txtPuntuacion
         '
         Me.txtPuntuacion.Enabled = False
-        Me.txtPuntuacion.Location = New System.Drawing.Point(591, 8)
+        Me.txtPuntuacion.Location = New System.Drawing.Point(299, 407)
         Me.txtPuntuacion.Name = "txtPuntuacion"
         Me.txtPuntuacion.Size = New System.Drawing.Size(60, 20)
         Me.txtPuntuacion.TabIndex = 11
-        '
-        'respuest4
-        '
-        Me.respuest4.Location = New System.Drawing.Point(189, 103)
-        Me.respuest4.Name = "respuest4"
-        Me.respuest4.Size = New System.Drawing.Size(43, 40)
-        Me.respuest4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.respuest4.TabIndex = 14
-        Me.respuest4.TabStop = False
-        '
-        'respuest3
-        '
-        Me.respuest3.Location = New System.Drawing.Point(186, 103)
-        Me.respuest3.Name = "respuest3"
-        Me.respuest3.Size = New System.Drawing.Size(43, 40)
-        Me.respuest3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.respuest3.TabIndex = 14
-        Me.respuest3.TabStop = False
-        '
-        'respuest2
-        '
-        Me.respuest2.Location = New System.Drawing.Point(189, 103)
-        Me.respuest2.Name = "respuest2"
-        Me.respuest2.Size = New System.Drawing.Size(43, 40)
-        Me.respuest2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.respuest2.TabIndex = 14
-        Me.respuest2.TabStop = False
-        '
-        'respuest1
-        '
-        Me.respuest1.Location = New System.Drawing.Point(186, 103)
-        Me.respuest1.Name = "respuest1"
-        Me.respuest1.Size = New System.Drawing.Size(43, 40)
-        Me.respuest1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.respuest1.TabIndex = 14
-        Me.respuest1.TabStop = False
         '
         'Form5
         '
@@ -368,15 +368,15 @@ Partial Class Form5
         Me.Text = "Español"
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox4.PerformLayout()
+        CType(Me.respuest4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
+        CType(Me.respuest3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        CType(Me.respuest2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.respuest4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.respuest3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.respuest2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.respuest1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
