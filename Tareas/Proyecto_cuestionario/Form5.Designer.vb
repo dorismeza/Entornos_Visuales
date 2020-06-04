@@ -110,9 +110,9 @@ Partial Class Form5
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(6, 25)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(253, 30)
+        Me.Label4.Size = New System.Drawing.Size(230, 30)
         Me.Label4.TabIndex = 1
-        Me.Label4.Text = "La frase: ""¿Enserio estás saliendo con" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " ese chico?"", es..."
+        Me.Label4.Text = "La frase: ""¿Enserio estás saliendo " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "con ese chico?"", es..."
         '
         'Ep41
         '
@@ -136,7 +136,7 @@ Partial Class Form5
         Me.GroupBox3.ForeColor = System.Drawing.Color.Crimson
         Me.GroupBox3.Location = New System.Drawing.Point(40, 215)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(248, 164)
+        Me.GroupBox3.Size = New System.Drawing.Size(307, 164)
         Me.GroupBox3.TabIndex = 7
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Pregunta 3"
@@ -175,9 +175,9 @@ Partial Class Form5
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(2, 25)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(335, 15)
+        Me.Label3.Size = New System.Drawing.Size(180, 30)
         Me.Label3.TabIndex = 1
-        Me.Label3.Text = "Señala la palabra que está incorrectamente escrita"
+        Me.Label3.Text = "Señala la palabra que está" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " incorrectamente escrita"
         '
         'Ep31
         '
@@ -266,7 +266,7 @@ Partial Class Form5
         Me.GroupBox1.ForeColor = System.Drawing.Color.Crimson
         Me.GroupBox1.Location = New System.Drawing.Point(40, 34)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(248, 164)
+        Me.GroupBox1.Size = New System.Drawing.Size(290, 164)
         Me.GroupBox1.TabIndex = 5
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Pregunta 1"
@@ -305,9 +305,9 @@ Partial Class Form5
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(6, 25)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(313, 30)
+        Me.Label1.Size = New System.Drawing.Size(245, 30)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Le estoy pidiendo que [____] a pintar la [____], " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " pero no me hace caso"
+        Me.Label1.Text = "Le estoy pidiendo que [____] a pintar" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " la [____], pero no me hace caso"
         '
         'Ep11
         '
