@@ -192,5 +192,8 @@
   <ItemGroup>
     <None Include="cerrar.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="hombrepc.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

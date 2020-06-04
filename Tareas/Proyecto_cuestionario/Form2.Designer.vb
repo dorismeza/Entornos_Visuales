@@ -41,16 +41,18 @@ Partial Class Form2
         '
         'Ingresar
         '
-        Me.Ingresar.Location = New System.Drawing.Point(117, 147)
+        Me.Ingresar.BackColor = System.Drawing.Color.Cyan
+        Me.Ingresar.Location = New System.Drawing.Point(115, 131)
         Me.Ingresar.Name = "Ingresar"
         Me.Ingresar.Size = New System.Drawing.Size(101, 48)
         Me.Ingresar.TabIndex = 1
         Me.Ingresar.Text = "Ingresar"
-        Me.Ingresar.UseVisualStyleBackColor = True
+        Me.Ingresar.UseVisualStyleBackColor = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Location = New System.Drawing.Point(101, 35)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(142, 17)
@@ -65,7 +67,10 @@ Partial Class Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(358, 258)
+        Me.BackgroundImage = Global.Proyecto_cuestionario.My.Resources.Resources.hombrepc
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(362, 287)
+        Me.ControlBox = False
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Ingresar)
         Me.Controls.Add(Me.txtNombre)
