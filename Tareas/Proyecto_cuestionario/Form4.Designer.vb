@@ -29,12 +29,12 @@ Partial Class Form4
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Cp11 = New System.Windows.Forms.RadioButton()
         Me.preg2 = New System.Windows.Forms.GroupBox()
-        Me.txtpuntuacion = New System.Windows.Forms.TextBox()
         Me.respuesta12 = New System.Windows.Forms.PictureBox()
         Me.Cp23 = New System.Windows.Forms.RadioButton()
         Me.Cp22 = New System.Windows.Forms.RadioButton()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Cp21 = New System.Windows.Forms.RadioButton()
+        Me.txtpuntuacion = New System.Windows.Forms.TextBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.respuesta13 = New System.Windows.Forms.PictureBox()
         Me.Cp33 = New System.Windows.Forms.RadioButton()
@@ -141,14 +141,6 @@ Partial Class Form4
         Me.preg2.TabStop = False
         Me.preg2.Text = "Pregunta 2"
         '
-        'txtpuntuacion
-        '
-        Me.txtpuntuacion.Enabled = False
-        Me.txtpuntuacion.Location = New System.Drawing.Point(297, 402)
-        Me.txtpuntuacion.Name = "txtpuntuacion"
-        Me.txtpuntuacion.Size = New System.Drawing.Size(59, 20)
-        Me.txtpuntuacion.TabIndex = 15
-        '
         'respuesta12
         '
         Me.respuesta12.Location = New System.Drawing.Point(225, 103)
@@ -197,6 +189,14 @@ Partial Class Form4
         Me.Cp21.TabIndex = 0
         Me.Cp21.Text = "Segregacion"
         Me.Cp21.UseVisualStyleBackColor = True
+        '
+        'txtpuntuacion
+        '
+        Me.txtpuntuacion.Enabled = False
+        Me.txtpuntuacion.Location = New System.Drawing.Point(297, 402)
+        Me.txtpuntuacion.Name = "txtpuntuacion"
+        Me.txtpuntuacion.Size = New System.Drawing.Size(59, 20)
+        Me.txtpuntuacion.TabIndex = 15
         '
         'GroupBox3
         '
@@ -343,7 +343,6 @@ Partial Class Form4
         'Cregresar
         '
         Me.Cregresar.BackColor = System.Drawing.Color.Black
-        Me.Cregresar.Enabled = False
         Me.Cregresar.Font = New System.Drawing.Font("Showcard Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Cregresar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Cregresar.Location = New System.Drawing.Point(19, 392)

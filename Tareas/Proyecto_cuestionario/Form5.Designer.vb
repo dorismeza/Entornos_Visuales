@@ -322,7 +322,6 @@ Partial Class Form5
         'Eregresar
         '
         Me.Eregresar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Eregresar.Enabled = False
         Me.Eregresar.Font = New System.Drawing.Font("Showcard Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Eregresar.Location = New System.Drawing.Point(35, 407)
         Me.Eregresar.Name = "Eregresar"

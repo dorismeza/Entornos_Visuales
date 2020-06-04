@@ -15,6 +15,7 @@ Public Class Form2
         Else
             MessageBox.Show("     Bienvenido  " & nombre, "Cuestionario", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Form1.Show()
+            Me.Hide()
         End If
 
     End Sub
