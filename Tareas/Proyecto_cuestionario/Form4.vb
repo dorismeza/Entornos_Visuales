@@ -75,8 +75,9 @@
 
     Private Sub Puntuacion_Click(sender As Object, e As EventArgs) Handles Puntuacion.Click
         Dim x As Integer
+        Cregresar.Enabled = True
 
-
+        Cregresar.Enabled = False
         If Cp13.Checked = True Then
             x = x + 1
         End If
@@ -95,5 +96,15 @@
 
 
         txtpuntuacion.Text = x
+        Cregresar.Enabled = True
+    End Sub
+
+    Private Sub Eregresar_Click(sender As Object, e As EventArgs) Handles Cregresar.Click
+        Form1.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        MessageBox.Show("Tendras un intento para responder el cuestionario, una vez finalizado puedes consultar tu puntuacion", "Ciencia", MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
 End Class

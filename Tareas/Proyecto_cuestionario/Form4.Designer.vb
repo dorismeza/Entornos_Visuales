@@ -23,43 +23,45 @@ Partial Class Form4
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.respuesta11 = New System.Windows.Forms.PictureBox()
         Me.Cp13 = New System.Windows.Forms.RadioButton()
         Me.Cp12 = New System.Windows.Forms.RadioButton()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Cp11 = New System.Windows.Forms.RadioButton()
         Me.preg2 = New System.Windows.Forms.GroupBox()
-        Me.respuesta12 = New System.Windows.Forms.PictureBox()
         Me.Cp23 = New System.Windows.Forms.RadioButton()
         Me.Cp22 = New System.Windows.Forms.RadioButton()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Cp21 = New System.Windows.Forms.RadioButton()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.respuesta13 = New System.Windows.Forms.PictureBox()
         Me.Cp33 = New System.Windows.Forms.RadioButton()
         Me.Cp32 = New System.Windows.Forms.RadioButton()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Cp31 = New System.Windows.Forms.RadioButton()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.respuesta14 = New System.Windows.Forms.PictureBox()
         Me.Cp43 = New System.Windows.Forms.RadioButton()
         Me.Cp42 = New System.Windows.Forms.RadioButton()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Cp41 = New System.Windows.Forms.RadioButton()
         Me.Puntuacion = New System.Windows.Forms.Button()
         Me.txtpuntuacion = New System.Windows.Forms.TextBox()
+        Me.respuesta14 = New System.Windows.Forms.PictureBox()
+        Me.respuesta13 = New System.Windows.Forms.PictureBox()
+        Me.respuesta12 = New System.Windows.Forms.PictureBox()
+        Me.respuesta11 = New System.Windows.Forms.PictureBox()
+        Me.Cregresar = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.respuesta11, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.preg2.SuspendLayout()
-        CType(Me.respuesta12, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
-        CType(Me.respuesta13, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox4.SuspendLayout()
         CType(Me.respuesta14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.respuesta13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.respuesta12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.respuesta11, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Controls.Add(Me.respuesta11)
         Me.GroupBox1.Controls.Add(Me.Cp13)
         Me.GroupBox1.Controls.Add(Me.Cp12)
@@ -73,15 +75,6 @@ Partial Class Form4
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Pregunta 1"
-        '
-        'respuesta11
-        '
-        Me.respuesta11.Location = New System.Drawing.Point(218, 103)
-        Me.respuesta11.Name = "respuesta11"
-        Me.respuesta11.Size = New System.Drawing.Size(43, 40)
-        Me.respuesta11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.respuesta11.TabIndex = 13
-        Me.respuesta11.TabStop = False
         '
         'Cp13
         '
@@ -124,6 +117,7 @@ Partial Class Form4
         '
         'preg2
         '
+        Me.preg2.BackColor = System.Drawing.Color.Transparent
         Me.preg2.Controls.Add(Me.txtpuntuacion)
         Me.preg2.Controls.Add(Me.respuesta12)
         Me.preg2.Controls.Add(Me.Cp23)
@@ -138,15 +132,6 @@ Partial Class Form4
         Me.preg2.TabIndex = 1
         Me.preg2.TabStop = False
         Me.preg2.Text = "Pregunta 2"
-        '
-        'respuesta12
-        '
-        Me.respuesta12.Location = New System.Drawing.Point(225, 103)
-        Me.respuesta12.Name = "respuesta12"
-        Me.respuesta12.Size = New System.Drawing.Size(43, 40)
-        Me.respuesta12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.respuesta12.TabIndex = 14
-        Me.respuesta12.TabStop = False
         '
         'Cp23
         '
@@ -190,6 +175,7 @@ Partial Class Form4
         '
         'GroupBox3
         '
+        Me.GroupBox3.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox3.Controls.Add(Me.respuesta13)
         Me.GroupBox3.Controls.Add(Me.Cp33)
         Me.GroupBox3.Controls.Add(Me.Cp32)
@@ -203,15 +189,6 @@ Partial Class Form4
         Me.GroupBox3.TabIndex = 2
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Pregunta 3"
-        '
-        'respuesta13
-        '
-        Me.respuesta13.Location = New System.Drawing.Point(218, 94)
-        Me.respuesta13.Name = "respuesta13"
-        Me.respuesta13.Size = New System.Drawing.Size(43, 40)
-        Me.respuesta13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.respuesta13.TabIndex = 14
-        Me.respuesta13.TabStop = False
         '
         'Cp33
         '
@@ -254,6 +231,7 @@ Partial Class Form4
         '
         'GroupBox4
         '
+        Me.GroupBox4.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox4.Controls.Add(Me.respuesta14)
         Me.GroupBox4.Controls.Add(Me.Cp43)
         Me.GroupBox4.Controls.Add(Me.Cp42)
@@ -267,15 +245,6 @@ Partial Class Form4
         Me.GroupBox4.TabIndex = 4
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Pregunta 4"
-        '
-        'respuesta14
-        '
-        Me.respuesta14.Location = New System.Drawing.Point(225, 103)
-        Me.respuesta14.Name = "respuesta14"
-        Me.respuesta14.Size = New System.Drawing.Size(43, 40)
-        Me.respuesta14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.respuesta14.TabIndex = 14
-        Me.respuesta14.TabStop = False
         '
         'Cp43
         '
@@ -318,26 +287,81 @@ Partial Class Form4
         '
         'Puntuacion
         '
-        Me.Puntuacion.Location = New System.Drawing.Point(547, 408)
+        Me.Puntuacion.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Puntuacion.Font = New System.Drawing.Font("Showcard Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Puntuacion.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Puntuacion.Location = New System.Drawing.Point(502, 393)
         Me.Puntuacion.Name = "Puntuacion"
-        Me.Puntuacion.Size = New System.Drawing.Size(81, 30)
+        Me.Puntuacion.Size = New System.Drawing.Size(113, 30)
         Me.Puntuacion.TabIndex = 14
         Me.Puntuacion.Text = "Puntuación"
-        Me.Puntuacion.UseVisualStyleBackColor = True
+        Me.Puntuacion.UseVisualStyleBackColor = False
         '
         'txtpuntuacion
         '
-        Me.txtpuntuacion.Location = New System.Drawing.Point(241, -10)
+        Me.txtpuntuacion.Enabled = False
+        Me.txtpuntuacion.Location = New System.Drawing.Point(241, 0)
         Me.txtpuntuacion.Name = "txtpuntuacion"
         Me.txtpuntuacion.Size = New System.Drawing.Size(59, 21)
         Me.txtpuntuacion.TabIndex = 15
+        '
+        'respuesta14
+        '
+        Me.respuesta14.Location = New System.Drawing.Point(225, 103)
+        Me.respuesta14.Name = "respuesta14"
+        Me.respuesta14.Size = New System.Drawing.Size(43, 40)
+        Me.respuesta14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.respuesta14.TabIndex = 14
+        Me.respuesta14.TabStop = False
+        '
+        'respuesta13
+        '
+        Me.respuesta13.Location = New System.Drawing.Point(218, 94)
+        Me.respuesta13.Name = "respuesta13"
+        Me.respuesta13.Size = New System.Drawing.Size(43, 40)
+        Me.respuesta13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.respuesta13.TabIndex = 14
+        Me.respuesta13.TabStop = False
+        '
+        'respuesta12
+        '
+        Me.respuesta12.Location = New System.Drawing.Point(225, 103)
+        Me.respuesta12.Name = "respuesta12"
+        Me.respuesta12.Size = New System.Drawing.Size(43, 40)
+        Me.respuesta12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.respuesta12.TabIndex = 14
+        Me.respuesta12.TabStop = False
+        '
+        'respuesta11
+        '
+        Me.respuesta11.Location = New System.Drawing.Point(218, 103)
+        Me.respuesta11.Name = "respuesta11"
+        Me.respuesta11.Size = New System.Drawing.Size(43, 40)
+        Me.respuesta11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.respuesta11.TabIndex = 13
+        Me.respuesta11.TabStop = False
+        '
+        'Cregresar
+        '
+        Me.Cregresar.BackColor = System.Drawing.Color.Black
+        Me.Cregresar.Enabled = False
+        Me.Cregresar.Font = New System.Drawing.Font("Showcard Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Cregresar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Cregresar.Location = New System.Drawing.Point(19, 392)
+        Me.Cregresar.Name = "Cregresar"
+        Me.Cregresar.Size = New System.Drawing.Size(81, 30)
+        Me.Cregresar.TabIndex = 15
+        Me.Cregresar.Text = "Regresar"
+        Me.Cregresar.UseVisualStyleBackColor = False
         '
         'Form4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.Proyecto_cuestionario.My.Resources.Resources.pngtree_blackboard_campus_office_stationery_promotional_poster_background_image_134402
         Me.ClientSize = New System.Drawing.Size(640, 450)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Cregresar)
         Me.Controls.Add(Me.Puntuacion)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
@@ -347,16 +371,16 @@ Partial Class Form4
         Me.Text = "Ciencia"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.respuesta11, System.ComponentModel.ISupportInitialize).EndInit()
         Me.preg2.ResumeLayout(False)
         Me.preg2.PerformLayout()
-        CType(Me.respuesta12, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
-        CType(Me.respuesta13, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox4.PerformLayout()
         CType(Me.respuesta14, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.respuesta13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.respuesta12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.respuesta11, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -387,4 +411,5 @@ Partial Class Form4
     Friend WithEvents GroupBox4 As GroupBox
     Friend WithEvents Puntuacion As Button
     Friend WithEvents txtpuntuacion As TextBox
+    Friend WithEvents Cregresar As Button
 End Class

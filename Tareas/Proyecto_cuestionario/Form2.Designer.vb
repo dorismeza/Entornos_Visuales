@@ -22,9 +22,66 @@ Partial Class Form2
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Me.components = New System.ComponentModel.Container()
+        Me.txtNombre = New System.Windows.Forms.TextBox()
+        Me.Ingresar = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
+        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'txtNombre
+        '
+        Me.txtNombre.Location = New System.Drawing.Point(61, 79)
+        Me.txtNombre.Multiline = True
+        Me.txtNombre.Name = "txtNombre"
+        Me.txtNombre.Size = New System.Drawing.Size(221, 29)
+        Me.txtNombre.TabIndex = 0
+        '
+        'Ingresar
+        '
+        Me.Ingresar.Location = New System.Drawing.Point(117, 147)
+        Me.Ingresar.Name = "Ingresar"
+        Me.Ingresar.Size = New System.Drawing.Size(101, 48)
+        Me.Ingresar.TabIndex = 1
+        Me.Ingresar.Text = "Ingresar"
+        Me.Ingresar.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(101, 35)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(142, 17)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "Ingresa tu nombre"
+        '
+        'ErrorProvider1
+        '
+        Me.ErrorProvider1.ContainerControl = Me
+        '
+        'Form2
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "Form2"
+        Me.ClientSize = New System.Drawing.Size(358, 258)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Ingresar)
+        Me.Controls.Add(Me.txtNombre)
+        Me.Font = New System.Drawing.Font("Showcard Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.Name = "Form2"
+        Me.Text = "Bienvenido"
+        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
     End Sub
+
+    Friend WithEvents txtNombre As TextBox
+    Friend WithEvents Ingresar As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents ErrorProvider1 As ErrorProvider
+    Friend WithEvents ToolTip As ToolTip
 End Class

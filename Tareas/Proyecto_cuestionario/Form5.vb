@@ -75,7 +75,7 @@
 
     Private Sub Eobtener_Click(sender As Object, e As EventArgs) Handles Eobtener.Click
         Dim x As Integer
-
+        Eregresar.Enabled = True
         If Ep13.Checked = True Then
             x = x + 1
         End If
@@ -92,5 +92,16 @@
         End If
 
         txtPuntuacion.Text = x
+        Eregresar.Enabled = True
+    End Sub
+
+    Private Sub Eregresar_Click(sender As Object, e As EventArgs) Handles Eregresar.Click
+        Form1.Show()
+        Me.Hide()
+
+    End Sub
+
+    Private Sub Form5_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        MessageBox.Show("Tendras un intento para responder el cuestionario, una vez finalizado puedes consultar tu puntuacion", "Español", MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
 End Class

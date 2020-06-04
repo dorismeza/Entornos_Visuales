@@ -1,6 +1,6 @@
 ﻿Public Class Form3
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        MessageBox.Show("Tendras un intento para responder el cuestionario, una vez finalizado puedes consultar tu puntuacion", "Matematicas", MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
     Private Sub Mp11_CheckedChanged(sender As Object, e As EventArgs) Handles Mp11.CheckedChanged
 
@@ -79,6 +79,7 @@
     Private Sub Eobtener_Click(sender As Object, e As EventArgs) Handles Eobtener.Click
         Dim x As Integer
 
+        Mregresar.Enabled = True
 
         If Mp11.Checked = True Then
             x = x + 1
@@ -96,5 +97,13 @@
             x = x + 1
         End If
         txtpuntua.Text = x
+
+        Mregresar.Enabled = True
+    End Sub
+
+    Private Sub Eregresar_Click(sender As Object, e As EventArgs) Handles Mregresar.Click
+        Form1.Show()
+        Me.Hide()
+
     End Sub
 End Class

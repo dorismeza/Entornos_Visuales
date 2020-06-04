@@ -25,10 +25,11 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnTerminar = New System.Windows.Forms.Button()
         Me.btnCiencia = New System.Windows.Forms.Button()
         Me.btnEspañol = New System.Windows.Forms.Button()
         Me.btnMatematicas = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -67,21 +68,23 @@ Partial Class Form1
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Ciencia"
         '
-        'Button1
+        'btnTerminar
         '
-        Me.Button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button1.Location = New System.Drawing.Point(243, 343)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 7
-        Me.Button1.Text = "Terminar"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnTerminar.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.btnTerminar.Font = New System.Drawing.Font("Showcard Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTerminar.Location = New System.Drawing.Point(229, 273)
+        Me.btnTerminar.Name = "btnTerminar"
+        Me.btnTerminar.Size = New System.Drawing.Size(96, 42)
+        Me.btnTerminar.TabIndex = 7
+        Me.btnTerminar.Text = "Terminar"
+        Me.btnTerminar.UseVisualStyleBackColor = False
         '
         'btnCiencia
         '
-        Me.btnCiencia.BackColor = System.Drawing.Color.White
+        Me.btnCiencia.BackColor = System.Drawing.Color.Gray
         Me.btnCiencia.BackgroundImage = Global.Proyecto_cuestionario.My.Resources.Resources.ciencia
         Me.btnCiencia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnCiencia.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnCiencia.Location = New System.Drawing.Point(210, 119)
         Me.btnCiencia.Name = "btnCiencia"
         Me.btnCiencia.Size = New System.Drawing.Size(133, 117)
@@ -90,9 +93,10 @@ Partial Class Form1
         '
         'btnEspañol
         '
-        Me.btnEspañol.BackColor = System.Drawing.Color.White
+        Me.btnEspañol.BackColor = System.Drawing.Color.Gray
         Me.btnEspañol.BackgroundImage = Global.Proyecto_cuestionario.My.Resources.Resources.a_b_c
         Me.btnEspañol.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnEspañol.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnEspañol.Location = New System.Drawing.Point(377, 119)
         Me.btnEspañol.Name = "btnEspañol"
         Me.btnEspañol.Size = New System.Drawing.Size(131, 116)
@@ -101,24 +105,39 @@ Partial Class Form1
         '
         'btnMatematicas
         '
-        Me.btnMatematicas.BackColor = System.Drawing.Color.White
+        Me.btnMatematicas.BackColor = System.Drawing.Color.Gray
         Me.btnMatematicas.BackgroundImage = Global.Proyecto_cuestionario.My.Resources.Resources.calculadora
         Me.btnMatematicas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnMatematicas.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnMatematicas.Location = New System.Drawing.Point(39, 119)
         Me.btnMatematicas.Name = "btnMatematicas"
         Me.btnMatematicas.Size = New System.Drawing.Size(133, 117)
         Me.btnMatematicas.TabIndex = 0
         Me.btnMatematicas.UseVisualStyleBackColor = False
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Black
+        Me.Label4.Font = New System.Drawing.Font("Broadway", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Label4.Location = New System.Drawing.Point(124, 28)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(289, 19)
+        Me.Label4.TabIndex = 8
+        Me.Label4.Text = "Elije cualquiera de las opciones "
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.BackgroundImage = Global.Proyecto_cuestionario.My.Resources.Resources.pngtree_blackboard_campus_office_stationery_promotional_poster_background_image_134402
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(556, 432)
         Me.ControlBox = False
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.btnTerminar)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -142,5 +161,6 @@ Partial Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnTerminar As Button
+    Friend WithEvents Label4 As Label
 End Class
