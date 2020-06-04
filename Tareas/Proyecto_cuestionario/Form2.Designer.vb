@@ -27,14 +27,15 @@ Partial Class Form2
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
-        Me.txtNombre = New System.Windows.Forms.MaskedTextBox()
+        Me.btnSalir = New System.Windows.Forms.Button()
+        Me.txtNombre = New System.Windows.Forms.TextBox()
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Ingresar
         '
         Me.Ingresar.BackColor = System.Drawing.Color.Cyan
-        Me.Ingresar.Location = New System.Drawing.Point(119, 129)
+        Me.Ingresar.Location = New System.Drawing.Point(48, 125)
         Me.Ingresar.Name = "Ingresar"
         Me.Ingresar.Size = New System.Drawing.Size(101, 48)
         Me.Ingresar.TabIndex = 1
@@ -55,13 +56,22 @@ Partial Class Form2
         '
         Me.ErrorProvider1.ContainerControl = Me
         '
+        'btnSalir
+        '
+        Me.btnSalir.BackColor = System.Drawing.Color.Cyan
+        Me.btnSalir.Location = New System.Drawing.Point(188, 125)
+        Me.btnSalir.Name = "btnSalir"
+        Me.btnSalir.Size = New System.Drawing.Size(101, 48)
+        Me.btnSalir.TabIndex = 4
+        Me.btnSalir.Text = "Salir"
+        Me.btnSalir.UseVisualStyleBackColor = False
+        '
         'txtNombre
         '
-        Me.txtNombre.Location = New System.Drawing.Point(104, 81)
-        Me.txtNombre.Mask = "Nombre Apellido"
+        Me.txtNombre.Location = New System.Drawing.Point(88, 76)
         Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(139, 24)
-        Me.txtNombre.TabIndex = 3
+        Me.txtNombre.Size = New System.Drawing.Size(174, 24)
+        Me.txtNombre.TabIndex = 5
         '
         'Form2
         '
@@ -72,6 +82,7 @@ Partial Class Form2
         Me.ClientSize = New System.Drawing.Size(362, 287)
         Me.ControlBox = False
         Me.Controls.Add(Me.txtNombre)
+        Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Ingresar)
         Me.Font = New System.Drawing.Font("Showcard Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -87,5 +98,6 @@ Partial Class Form2
     Friend WithEvents Label1 As Label
     Friend WithEvents ErrorProvider1 As ErrorProvider
     Friend WithEvents ToolTip As ToolTip
-    Friend WithEvents txtNombre As MaskedTextBox
+    Friend WithEvents btnSalir As Button
+    Friend WithEvents txtNombre As TextBox
 End Class

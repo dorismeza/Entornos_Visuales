@@ -93,7 +93,7 @@
         If Cp43.Checked = True Then
             x = x + 1
         End If
-
+        MsgBox("Tu puntuacion es " & x & "/4", vbInformation)
 
         txtpuntuacion.Text = x
         Cregresar.Enabled = True

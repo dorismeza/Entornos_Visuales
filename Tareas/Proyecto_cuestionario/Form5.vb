@@ -90,6 +90,7 @@
         If Ep42.Checked = True Then
             x = x + 1
         End If
+        MsgBox("Tu puntuacion es " & x & "/4", vbInformation)
 
         txtPuntuacion.Text = x
         Eregresar.Enabled = True

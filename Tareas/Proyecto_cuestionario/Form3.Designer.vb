@@ -358,6 +358,7 @@ Partial Class Form3
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Proyecto_cuestionario.My.Resources.Resources.pngtree_blackboard_campus_office_stationery_promotional_poster_background_image_134402
         Me.ClientSize = New System.Drawing.Size(629, 450)
+        Me.ControlBox = False
         Me.Controls.Add(Me.txtpuntua)
         Me.Controls.Add(Me.Eobtener)
         Me.Controls.Add(Me.Mregresar)

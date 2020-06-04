@@ -11,7 +11,7 @@
         Dim Cancel As Integer
 
         Try
-            If (MsgBox("¿Esta seguro de salir?", vbCritical + vbYesNo) = vbYes) Then
+            If (MsgBox("¿Esta seguro que desea terminar?", vbCritical + vbYesNo) = vbYes) Then
                 End
             Else
                 Cancel = 1
