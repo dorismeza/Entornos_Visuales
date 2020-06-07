@@ -6,7 +6,6 @@
         'y necesita crear un algoritmo que lea las ventas mensuales de cada uno de los mismos,
         'calcule la media de ventas mensual de todos los almacenes y obtenga un listado de los almacenes 
         'cuyas ventas mensuales son superiores a la media
-
     End Sub
 
     Private Sub btnCalcular_Click(sender As Object, e As EventArgs) Handles btnCalcular.Click
