@@ -7,7 +7,6 @@ Public Class Form1
 
     Private Sub btnCalcular_Click(sender As Object, e As EventArgs) Handles btnCalcular.Click
         Dim a, b, c, x1, x2, discriminante As Double
-
         a = Val(txtValorA.Text)
         b = Val(txtValorB.Text)
         c = Val(txtValorC.Text)
