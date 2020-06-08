@@ -3,7 +3,7 @@
 Public Class Form1
     Dim media = 0,
         acumulador,
-        cantidad, calcular As Double
+        cantidad, calcular(20) As Double
     Dim cant As Integer
     Dim itemalmacen, idalmacen As String
 
@@ -14,6 +14,7 @@ Public Class Form1
         cmbAlmacen.Text = ""
         media = 0
         acumulador = 0
+
     End Sub
 
 
@@ -80,19 +81,21 @@ Public Class Form1
 
     Private Sub btnCalcular_Click(sender As Object, e As EventArgs) Handles btnCalcular.Click
         txtMedia.Text = media
-        If calcular > media Then
-            txtlista.Text = txtlista.Text & itemalmacen & " " & calcular & vbCrLf
-        End If
-
+        For j = 1 To 20 Step 1
+            If calcular(j) > media Then
+                txtlista.Text = txtlista.Text & itemalmacen & " " & calcular(j) & vbCrLf
+            End If
+        Next
     End Sub
     Private Sub Ingreso()
         Try
             For i = 1 To cant Step 1
                 cantidad = InputBox("Ingrese vental mensual " & i, "Ventas Mensuales")
                 acumulador += cantidad
+                calcular(i) = cantidad
             Next
             media += (acumulador / 10)
-            calcular = cantidad
+
 
 
         Catch ex As Exception
