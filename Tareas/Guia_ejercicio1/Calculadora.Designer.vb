@@ -28,7 +28,6 @@ Partial Class Calculadora
         Me.txtProceso = New System.Windows.Forms.TextBox()
         Me.btnDivision = New System.Windows.Forms.Button()
         Me.btn9 = New System.Windows.Forms.Button()
-        Me.Listah = New System.Windows.Forms.ListBox()
         Me.btn2 = New System.Windows.Forms.Button()
         Me.btnMultiplicacion = New System.Windows.Forms.Button()
         Me.btn3 = New System.Windows.Forms.Button()
@@ -43,7 +42,7 @@ Partial Class Calculadora
         Me.btn0 = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.btnIngual = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'btn7
@@ -66,6 +65,7 @@ Partial Class Calculadora
         '
         resources.ApplyResources(Me.txtProceso, "txtProceso")
         Me.txtProceso.Name = "txtProceso"
+        Me.txtProceso.ReadOnly = True
         '
         'btnDivision
         '
@@ -82,12 +82,6 @@ Partial Class Calculadora
         resources.ApplyResources(Me.btn9, "btn9")
         Me.btn9.Name = "btn9"
         Me.btn9.UseVisualStyleBackColor = True
-        '
-        'Listah
-        '
-        Me.Listah.FormattingEnabled = True
-        resources.ApplyResources(Me.Listah, "Listah")
-        Me.Listah.Name = "Listah"
         '
         'btn2
         '
@@ -201,17 +195,18 @@ Partial Class Calculadora
         Me.btnIngual.Name = "btnIngual"
         Me.btnIngual.UseVisualStyleBackColor = True
         '
-        'Label1
+        'TextBox1
         '
-        resources.ApplyResources(Me.Label1, "Label1")
-        Me.Label1.Name = "Label1"
+        resources.ApplyResources(Me.TextBox1, "TextBox1")
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
         '
         'Calculadora
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveBorder
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.btnIngual)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnPunto)
@@ -226,7 +221,6 @@ Partial Class Calculadora
         Me.Controls.Add(Me.btnMultiplicacion)
         Me.Controls.Add(Me.btn3)
         Me.Controls.Add(Me.btn4)
-        Me.Controls.Add(Me.Listah)
         Me.Controls.Add(Me.btn9)
         Me.Controls.Add(Me.btnDivision)
         Me.Controls.Add(Me.txtProceso)
@@ -246,7 +240,6 @@ Partial Class Calculadora
     Friend WithEvents txtProceso As TextBox
     Friend WithEvents btnDivision As Button
     Friend WithEvents btn9 As Button
-    Friend WithEvents Listah As ListBox
     Friend WithEvents btn2 As Button
     Friend WithEvents btnMultiplicacion As Button
     Friend WithEvents btn3 As Button
@@ -261,5 +254,5 @@ Partial Class Calculadora
     Friend WithEvents btn0 As Button
     Friend WithEvents btnClear As Button
     Friend WithEvents btnIngual As Button
-    Friend WithEvents Label1 As Label
+    Friend WithEvents TextBox1 As TextBox
 End Class

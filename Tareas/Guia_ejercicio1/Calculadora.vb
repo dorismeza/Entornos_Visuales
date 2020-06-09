@@ -2,6 +2,7 @@
     Dim Operacion As String
     Dim Resultado As Nullable(Of Double) = Nothing
     Dim Valor2 As Nullable(Of Double) = Nothing
+    Dim Valor1 As Nullable(Of Double) = Nothing
     Dim Bandera As Boolean
 
     Private Sub btn7_Click(sender As Object, e As EventArgs) Handles btn7.Click
@@ -88,46 +89,51 @@
     End Sub
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
-
         txtProceso.Clear()
         Vaciar()
+        Valor2 = 0
+        Resultado = 0
     End Sub
 
     Private Sub btnIngual_Click(sender As Object, e As EventArgs) Handles btnIngual.Click
         Vaciar()
         Proceso()
+
     End Sub
 
     Public Sub Vaciar()
         If Bandera = True Then
-            txtProceso.Text = ""
+            txtProceso.Clear()
             Bandera = False
         ElseIf txtProceso.Text = "0" Then
-            txtProceso.Text = ""
+            txtProceso.Clear()
         End If
     End Sub
     Public Sub Proceso()
         Bandera = True
         Valor2 = Val(txtProceso.Text)
+        Valor1 = Val(txtProceso.Text)
 
         If Resultado IsNot Nothing Then
 
-                Select Case Operacion
-                    Case "+"
-                        Resultado = Resultado + Valor2
-                    Case "-"
-                        Resultado -= Valor2
-                    Case "*"
-                        Resultado *= Valor2
-                    Case "/"
-                        Resultado /= Valor2
-                End Select
-                txtProceso.Text = Resultado
-            Else
-                Resultado = Valor2
-            End If
+            Select Case Operacion
+                Case "+"
+                    Resultado = Valor1 + Valor2
+                Case "-"
+                    Resultado = Valor1 - Valor2
+                Case "*"
+                    Resultado = Valor1 * Valor2
+                Case "/"
+                    Resultado = Valor1 / Valor2
+            End Select
+
+            txtProceso.Text = Resultado
+        Else
+            Resultado = Valor2
+        End If
 
 
     End Sub
+
 
 End Class

@@ -1,6 +1,6 @@
 ﻿Imports System.ComponentModel
 
-Public Class Form1
+Public Class ejercicio3
     Dim media = 0,
         acumulador,
         cantidad, calcular(20) As Double

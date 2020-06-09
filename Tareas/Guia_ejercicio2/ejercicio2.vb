@@ -1,6 +1,6 @@
 ﻿Imports System.ComponentModel
 
-Public Class Form1
+Public Class ejercicio2
     Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
 
     End Sub

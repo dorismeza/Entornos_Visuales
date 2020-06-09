@@ -1,6 +1,6 @@
 ﻿Imports System.ComponentModel
 
-Public Class Form1
+Public Class ejercicio4
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         cmbNumIngresados.DropDownStyle = ComboBoxStyle.DropDownList
     End Sub

@@ -1,6 +1,6 @@
 ﻿Imports System.ComponentModel
 
-Public Class Form1
+Public Class ejercicio5
     Private Sub btnCalcular_Click(sender As Object, e As EventArgs) Handles btnCalcular.Click
         Dim salario, sueldo As Double
         salario = Val(txtSalario.Text)
